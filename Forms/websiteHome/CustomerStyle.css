@@ -1,0 +1,235 @@
+body{
+    background-color: white;
+    color: #555;
+    font-family: 'Athiti', sans-serif;
+    font-size: 16px;
+    line-height: 1.6em;
+    margin: 0;
+}
+.headerStyle{
+    background-color:#413524;
+    color: #ffffff;
+    /*height: 50px;*/
+    padding-left: 50px;
+    overflow: hidden;
+    /*padding-top: 5px;
+    padding-bottom: 10px;*/ 
+}
+
+.logoHeading{
+    float: left;
+}
+
+.headerStyle-right {
+    padding-top: 23px;
+    padding-right: 5px;
+    float: right;
+}
+.headerStyle a {
+  padding: 5px;
+  color: white;
+  text-align: center;
+  background-color:bisque;
+  font-size: 15px; 
+  border-radius: 3px;
+}
+
+.headerStyle a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.navStyle{
+    background-color: #704828;
+    color: #ffffff;
+    height: 35px;
+    padding-left: 50px;
+}
+
+.layout{
+    padding-top: 5px;
+}
+
+#tabStyle a:hover{
+    color:burlywood;
+    font-size: 20px;
+}
+
+ul, li{
+    padding: 0;
+    list-style: none;
+    display: inline;
+}
+
+a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    padding-right: 15px;
+}
+
+* {box-sizing: border-box}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: 0;
+}
+
+img{
+    width: 100%;
+    /*height: 86.7%;*/
+    height: 80%;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+.packages{
+    width: 100%;
+    height: 100%;
+}
+.row{
+    width: 10%;
+    height: 5%;
+    background: red;
+    transition: width 2s;
+}
+
+.row:hover{
+    width:300px;
+}
+
+.deluxe_images{
+    width: 100%;
+    height: 45%;
+}
+.image_left{
+    float: left;
+    width: 33.33%;
+    height: 100%;
+    background-size: cover;
+    
+}
+.image_container{
+    padding-right: 5px;
+    background-repeat: no-repeat;
+    
+}
+
+
+.endFooter{
+    height: 40%;
+    width: 100%;
+    position: relative;
+}
+
+.footerimg{
+    opacity: 0.5;
+    position: absolute;
+    height:100%;
+}
+
+.column{
+    padding-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 90%;
+    width: 90%;
+    background-color: FDD2BF;
+    position: relative;
+}
+
+.left{
+    float: left;
+    width: 30%;
+    height: 100%;
+    background-color: E98580;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.paraFooter{
+    text-align: justify;
+    padding: 0px 40px; 
+    line-height: 1.5;
+    word-spacing: 5px;
+    font-size: 130%;
+}
+
+.copyright{
+    background: #333;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    position: relative;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title></title>    
+</head>
+    <body>
+    <header><h1>Confirmed Reservations</h1></header>
+        <div>
+        <form>
+            <div>
+            <label>NIC</label>
+            <input type="text" id="nic" name="nic" placeholder="Enter NIC No."><br><br>    
+            </div>
+            <div>
+            <label>Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter Name"><br><br>    
+            </div>
+            <div>
+            <label>Address</label>
+            <textarea id="textarea" name="textarea" rows="3" cols="40" placeholder="Enter Address"></textarea><br><br>    
+            </div>
+            <div>
+            <label>Contact</label>
+            <input type="text" id="contact" name="contact" placeholder="Enter Contact No."><br><br>    
+            </div>
+            <div>
+            <label>Email</label>
+            <input type="email" id="email" name="email" placeholder="youremail@gmail.com"><br><br>    
+            </div>
+            <div>
+            <label>Gender</label>
+            <input type="radio" id="gender" name="gender" value="male">
+            <label for="gender">Male</label>
+            <input type="radio" id="gender" name="gender" value="female">
+            <label for="gender">Female</label><br><br>
+            </div>
+            <div>
+            <label>Reserved Room</label>
+            <select id="roomtype" name="roomtype">
+            <option value="deluxe">Deluxe</option>
+            <option value="Superior">Superior</option>
+            </select>
+            <select id="roomsize" name="roomsize">
+            <option value="single">Single</option>
+            <option value="Double">Double</option>
+            <option value="Triple">Triple</option>
+            </select><br><br>
+            </div>
+            <div>
+            <label>Check in Date</label>
+            <input type="date" id="checkin" name="checkin"><br><br>
+            </div>
+            <div>
+            <label>Check out Date</label>
+            <input type="date" id="checkout" name="checkout"><br><br>
+            </div>
+            <div>
+            <input type="button" name="Ok" value="Ok">
+            <input type="button" name="Reset" value="Reset">
+            <input type="button" name="Viewall" value="View All">
+            </div>
+            </form>
+        </div>
+    </body>
+</html>

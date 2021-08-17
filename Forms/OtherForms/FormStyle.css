@@ -1,0 +1,133 @@
+body{
+    background-color:aquamarine;
+    color: #555;
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 1.6em;
+    margin: 0;
+    background-blend-mode:normal;
+    opacity: 0.9;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color:antiquewhite;
+}
+.leftDiv{
+    float: left;
+}
+.rightDiv{
+    float: right;
+}
+.labelAndInput label{
+    display:block;
+}
+
+.paraStyle{
+    font-size: 40px;
+    line-height: normal;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.labelAndInput input[type="text"], .labelAndInput input[type="date"], .labelAndInput textarea, .labelAndInput input[type="email"], select, .labelAndInput input[type="file"]{
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 0px;
+    border-radius: 10px;
+    display: inline-block;
+    border-style:solid;
+    border-color: #413524;
+    border-width: 2px;
+    box-sizing: border-box;
+}
+.widthchange{
+    width: 22%;
+}
+.formStyle{
+    background-color: white;
+    border-radius: 30px;
+    margin-top: 50px;
+    margin-left: 550px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    padding: 20px;
+
+}
+.labelAndInput input[type="file"]{
+    display:block;
+}
+
+.fileBtnStyle{
+    border-radius: 30px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #413524
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    tab-size: 500px;
+}
+.btnStyle{
+    background-color: #413524;
+    border-style: none;
+    color: #ffffff;
+    padding: 10px 15px;
+    margin-top: 5px;
+    margin-left: 250px;
+    width: 50%;
+    border-radius: 5000px;
+    position:center;
+}
+.btnStyle:hover {
+    background-color:#963838;
+}
+
+.asideStyle{
+    float: right;
+    width: 30%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.asideStyle2{
+    float: left;
+    width: 50%;
+    padding: 0px 30px;
+    box-sizing: border-box;
+}
+.spdiv{
+    margin: 200px;
+}
+.layout{
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+.image {
+    min-height: 380px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 600px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+#row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
