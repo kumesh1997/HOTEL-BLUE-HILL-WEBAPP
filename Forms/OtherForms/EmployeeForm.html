@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Employee</title>
+    <link rel="stylesheet" href="FormStyle.css">
+</head>
+<body style="background-image: url(image.jpg); background-size: cover; background-repeat: no-repeat">
+    <div class="image">
+        <form class="formStyle" id="row">
+            <div class="column" style="background-color:white">
+                <div class="labelAndInput ">
+                    <label> Full Name </label> 
+                    <select id="title" name="title" class="widthchange">
+                    <option value="Mr">Mr</option>
+                    <option value="Mrs">Mrs</option>
+                    <option value="Ms">Ms</option>
+                    </select>
+                    <input type="text" id="fullName" name="fullName" placeholder="Full Name">
+                </div> 
+                <div class="labelAndInput">
+                    <label> NIC Number</label> 
+                    <input type="text" id="nic" name="nic" placeholder="NIC Number ">
+                </div>
+                <div class="labelAndInput"> 
+                    <label> Contact Number </label> 
+                    <input type="text" id="contact" name="contact" placeholder="Contact number">
+                </div>
+                <div class="labelAndInput">   
+                    <label> Permanant Address </label> <textarea id="permanantAddress" name="permanantAddress" placeholder="Permanant Address"></textarea>  
+                </div>
+                <div class="labelAndInput">
+                    <label>Gender</label>
+                    <input type="radio" id="male" name="gender" value="male"> Male
+                    <input type="radio" id="female" name="gender" value="female"> Female <br> 
+                </div>
+                <div class="labelAndInput">
+                    <label> Image </label>
+                    <input type="file" id="employeeImage" name="employeeImage" class="fileBtnStyle">
+                </div>
+            </div>
+            <div class="column" style="background-color: white">
+                <div class="labelAndInput">
+                    <label> Name with Initials </label>
+                    <input type="text" id="nameWithInitials" name="nameWithInitials" placeholder="Name with Initials">
+                </div>
+                <div class="labelAndInput">
+                    <label>Date of Birth</label>
+                    <input type="date" id="dob" name="dob">
+                </div>
+                <div class="labelAndInput">
+                    <label> Date of Appointment </label>
+                    <input type="date" id="dateOfAppointment" name="dateOfAppointment">
+                </div>
+                <div class="labelAndInput">   
+                    <label> Current Address </label> 
+                    <textarea id="currentAddress" name="currentAddress" placeholder="Current Address"></textarea>  
+                </div>
+
+                <div class="labelAndInput">
+                    <label> Designation </label>
+                    <select id="designation" name="designation">
+                    <option value="Manager">Manager</option>
+                    <option value="Receptionist">Receptionist</option>
+                    <option value="HeadOfTheKitchen">Head of the Kitchen</option>
+                    <option value="HeadOfUtilities">Head of Utilities</option>
+                    </select>
+                </div>
+            </div>
+            <div class="labelAndInput">
+                    <input type="submit" value="Add" class="btnStyle">
+                    <input type="submit" value="Update" class="btnStyle">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

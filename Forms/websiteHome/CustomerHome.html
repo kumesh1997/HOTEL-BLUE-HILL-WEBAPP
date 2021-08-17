@@ -1,0 +1,150 @@
+<!DOCKTYPE html>
+<html>
+    <head>
+        <title>
+            CustomerView
+        </title>
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="CustomerStyle.css" >
+    </head>
+    <body>
+        <header class="headerStyle">
+                <h1 class="logoHeading">Hotel Blue Hill </h1>
+                <div class="headerStyle-right">
+                <a href="#">LOGIN</a>
+                </div>
+        </header>
+      
+        <nav class="navStyle">
+            <div class="layout" id="tabStyle">
+                <ul> 
+                    <li><a href="#"> Home </a></li>
+                    <li><a href="#"> Menu </a></li>
+                    <li> <a href="#"> About Us</a> </li>
+                    <li> <a href="#"> Book Now </a> </li>
+                    <li> <a href="#"> Contacts Us </a> </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="ViewImage1.jpg">
+              <div class="text">Caption Text</div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img src="ViewImage2.jpg">
+              <div class="text">Caption Two</div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="ViewImage4.jpg">
+              <div class="text">Caption Three</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            </div>
+        
+        <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+        
+        <div class="packages">
+            <div class="row">
+               
+            </div>
+             <div class="deluxe_images"> 
+                 <div class="image_left" style="background-color: aqua; background-image: url(deluxe%20single.jpg) ">
+                 
+                 </div>
+                 <div class="image_left" style="background-color: aqua; background-image: url(deluxe%20double.jpg) ">
+                 
+                 </div>
+                 <div class="image_left" style="background-color: aqua; background-image: url(deluxe%20triple.jpg) ">
+                 
+                 </div>
+                 
+            </div>
+             <div class="row">
+               
+            </div>
+            <div class="deluxe_images"> 
+                 <div class="image_left" style="background-color: aqua; background-image: url(superior%20single.jpg);"> 
+                 
+                 </div>
+                 <div class="image_left" style="background-color: aqua; background-image: url(superior%20double.jpg) ">
+                 
+                 </div>
+                 <div class="image_left" style="background-color: aqua; background-image: url(superior%20triple.jpg) ">
+                 
+                 </div>
+                 
+            </div>
+        </div>
+         
+        <script>
+        
+                var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+              
+        </script>
+        
+         <footer class="endFooter">
+             <img class="footerimg" src="footer.jpg">
+             <div class="column">
+                 <div class="left">
+                    <h2>ABOUT US</h2>
+                    <p class="paraFooter">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                 </div>
+                 <div class="left" style="width:40%">
+                     <h2>OPENING HOURS</h2>
+                     <p class="paraFooter">write something </p>
+                 </div>
+                 <div class="left" style="width: 30%;">
+                    <h2>CONTACT INFORMATION</h2>
+                     <p class="paraFooter"> 200,Monaragala,sri lanka </p>
+                     <p class="paraFooter"> 0342257689 </p>
+                     <a href="#"> <i class="fa fa-facebook-official fa-inverse" aria-hidden="true" ></i> </a>
+                     <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i> </a>
+                     <a href="#"> <i class="fa fa-envelope" aria-hidden="true"></i> </a>
+                 </div>
+             </div>
+             <div class="copyright"> 
+                Copyright &copy;HOTEL BLUE HILL | ALL RIGHTS RESERVED
+            </div>
+         </footer>
+       
+    </body>
+</html>
